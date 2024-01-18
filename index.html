@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark"> <!--begin::Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Finanzratgeber</title><!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="AdminLTE | Dashboard v2">
+    <meta name="author" content="ColorlibHQ">
+    <meta name="description"
+        content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
+    <meta name="keywords"
+        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard">
+    <!--end::Primary Meta Tags--><!--begin::Fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
+        integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous">
+    <!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css"
+        integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous">
+    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css"
+        integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous">
+    <!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="/css/adminlte.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
+        integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous">
+
+    <style>
+        span.apexcharts-legend-text {
+            color: white !important;
+        }
+    </style>
+
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#" data-lte-toggle="fullscreen"> <i
+                                data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i> <i
+                                data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i> </a>
+                    </li>
+                    <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"> <img src="/img/user2-160x160.jpg"
+                                class="user-image rounded-circle shadow" alt="User Image"> <span
+                                class="d-none d-md-inline">Max Mustermann</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Finanzratgeber v1</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="info-box text-bg-primary"> <span class="info-box-icon"> <i
+                                        class="bi bi-bookmark-fill"></i> </span>
+                                <div class="info-box-content"> <span class="info-box-text">Einnahmen</span> <span
+                                        class="info-box-number">1400 €</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div> <span class="progress-description">
+                                        10% mehr zum letzten Monat
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="info-box text-bg-danger"> <span class="info-box-icon"> <i
+                                        class="bi bi-calendar3"></i> </span>
+                                <div class="info-box-content"> <span class="info-box-text">Ausgaben</span> <span
+                                        class="info-box-number">1115 €</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div> <span class="progress-description">
+                                        5% mehr zum letzten Monat
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="info-box text-bg-success"> <span class="info-box-icon"> <i
+                                        class="bi bi-hand-thumbs-up"></i> </span>
+                                <div class="info-box-content"> <span class="info-box-text">Einsparpotenzial</span> <span
+                                        class="info-box-number">285 €</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div> <span class="progress-description">
+                                        5% mehr zum letzten Monat
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-12">
+                                <div class="card-header">
+                                    <h3 class="card-title">Einnahmenquellen</h3>
+                                    <div class="card-tools"> <button type="button" class="btn btn-tool"
+                                            data-lte-toggle="card-collapse"> <i data-lte-icon="expand"
+                                                class="bi bi-plus-lg"></i> <i data-lte-icon="collapse"
+                                                class="bi bi-dash-lg"></i> </button> <button type="button"
+                                            class="btn btn-tool" data-lte-toggle="card-remove"> <i
+                                                class="bi bi-x-lg"></i> </button> </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="p-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="info-box mb-3 text-bg-danger"> <span class="info-box-icon">
+                                                        <i class="bi bi-person-workspace"></i> </span>
+                                                    <div class="info-box-content"> <span
+                                                            class="info-box-text">Werkstudent</span> <span
+                                                            class="info-box-number">1000€</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="info-box mb-3 text-bg-warning"> <span class="info-box-icon">
+                                                        <i class="bi bi-heart-fill"></i> </span>
+                                                    <div class="info-box-content"> <span class="info-box-text">Nebenjob
+                                                            1</span> <span class="info-box-number">150€</span> </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+
+                                                <div class="info-box mb-3 text-bg-info"> <span class="info-box-icon">
+                                                        <i class="bi bi-boxes"></i> </span>
+                                                    <div class="info-box-content"> <span class="info-box-text">Nebenjob
+                                                            2</span> <span class="info-box-number">150€</span> </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="info-box mb-3 text-bg-success"> <span class="info-box-icon"> <i
+                                                            class="bi bi-chat-fill"></i> </span>
+                                                    <div class="info-box-content"> <span class="info-box-text">Privatunterricht</span> <span class="info-box-number">100€</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h3 class="card-title">Ausgabenkategorien</h3>
+                                    <div class="card-tools"> <button type="button" class="btn btn-tool"
+                                            data-lte-toggle="card-collapse"> <i data-lte-icon="expand"
+                                                class="bi bi-plus-lg"></i> <i data-lte-icon="collapse"
+                                                class="bi bi-dash-lg"></i> </button> <button type="button"
+                                            class="btn btn-tool" data-lte-toggle="card-remove"> <i
+                                                class="bi bi-x-lg"></i> </button> </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div id="pie-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h5 class="card-title">Prognose</h5>
+                                    <div class="card-tools"> <button type="button" class="btn btn-tool"
+                                            data-lte-toggle="card-collapse"> <i data-lte-icon="expand"
+                                                class="bi bi-plus-lg"></i> <i data-lte-icon="collapse"
+                                                class="bi bi-dash-lg"></i> </button>
+                                        <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
+                                            <i class="bi bi-x-lg"></i> </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <p class="text-center"> <strong>Berechnung der Altersvorsorge</strong>
+                                            </p>
+                                            <div id="sales-chart"></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="text-center"> <strong>Kenndaten</strong> </p>
+                                            <div class="progress-group">
+                                                Anfangskapital
+                                                <span class="float-end"><b>1.000,00 €</b></span>
+
+                                            </div>
+                                            <div class="progress-group">
+                                                Sparrate
+                                                <span class="float-end"><b>250 €</span>
+                                            </div>
+                                            <div class="progress-group"> <span
+                                                    class="progress-text">Sparintervall</span> <span
+                                                    class="float-end"><b>monatlich</b></span>
+                                            </div>
+                                            <div class="progress-group">
+                                                Zinssatz
+                                                <span class="float-end"><b>3%</b></span>
+                                            </div>
+                                            <div class="progress-group">
+                                                Ansparzeit
+                                                <span class="float-end"><b>40 Jahre</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-md-3 col-6">
+                                            <div class="text-center border-end"> <span class="text-success"> <i
+                                                        class="bi bi-caret-up-fill"></i> 3%
+                                                </span>
+                                                <h5 class="fw-bold mb-0 text-info">1.000,00 €</h5> <span
+                                                    class="text-uppercase">Guthaben zu
+                                                    Jahresbeginn</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="text-center border-end"> <span class="text-info"> &nbsp; </span>
+                                                <h5 class="fw-bold mb-0 text-danger">120.000,00 €</h5> <span
+                                                    class="text-uppercase">Einzahlungen</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="text-center border-end"> <span class="text-success"> &nbsp; </span>
+                                                <h5 class="fw-bold mb-0 text-warning">112.141,63€</h5> <span
+                                                    class="text-uppercase">Zins-
+                                                    gutschriften</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="text-center"> <span class="text-danger"> &nbsp; </span>
+                                                <h5 class="fw-bold mb-0 text-success">233.141,63€</h5> <span
+                                                    class="text-uppercase">Das erzielte Endkapital inkl. Zinsen</span>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js"
+        integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script>
+    <script src="/js/adminlte.js"></script>
+    <script>
+        const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+        const Default = {
+            scrollbarTheme: "os-theme-light",
+            scrollbarAutoHide: "leave",
+            scrollbarClickScroll: true,
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+            if (
+                sidebarWrapper &&
+                typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
+            ) {
+                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                    scrollbars: {
+                        theme: Default.scrollbarTheme,
+                        autoHide: Default.scrollbarAutoHide,
+                        clickScroll: Default.scrollbarClickScroll,
+                    },
+                });
+            }
+        });
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
+        integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8=" crossorigin="anonymous"></script>
+    <script>
+        // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
+        // IT'S ALL JUST JUNK FOR DEMO
+        // ++++++++++++++++++++++++++++++++++++++++++
+
+        /* apexcharts
+         * -------
+         * Here we will create a few charts using apexcharts
+         */
+
+        //-----------------------
+        // - MONTHLY SALES CHART -
+        //-----------------------
+
+        const sales_chart_options = {
+            series: [{
+                name: "Laufzeit 20 Jahre",
+                data: [1000.00,	
+4078.75,
+7249.86,	
+10516.11,	
+13880.34,	
+17345.50,	
+20914.62,	
+24590.81,	
+28377.28,	
+32277.35,	
+36294.42,
+40432.00,
+44693.71,
+49083.27,
+53604.52,
+58261.41,
+63058.00,
+67998.49,
+73087.19,
+78328.56,
+],
+            },
+            {
+                name: "Laufzeit 40 Jahre",
+                data: [
+1000.00,	
+4078.75,
+7249.86,	
+10516.11,	
+13880.34,	
+17345.50,	
+20914.62,	
+24590.81,	
+28377.28,	
+32277.35,	
+36294.42,
+40432.00,
+44693.71,
+49083.27,
+53604.52,
+58261.41,
+63058.00,
+67998.49,
+73087.19,
+78328.56,
+83727.17,
+89287.73,
+95015.11,
+100914.32,
+106990.50,
+113248.96,
+119695.18,
+126334.78,
+133173.58,
+140217.54,
+147472.81,
+154945.75,
+162642.87,
+170570.90,
+178736.78,
+187147.63,
+195810.81,
+204733.89,
+213924.65,
+223391.14],
+            },
+            ],
+            chart: {
+                height: 450,
+                type: "area",
+                toolbar: {
+                    show: false,
+                },
+            },
+            legend: {
+                show: false,
+            },
+            colors: ["#0000ff", "#20c997"],
+            dataLabels: {
+                enabled: false,
+            },
+            stroke: {
+                curve: "smooth",
+            },
+            xaxis: {
+                type: "text",
+                categories: [
+                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"
+                ],
+            },
+            tooltip: {
+                x: {
+                    format: "MMMM yyyy",
+                },
+            },
+        };
+
+        const sales_chart = new ApexCharts(
+            document.querySelector("#sales-chart"),
+            sales_chart_options,
+        );
+        sales_chart.render();
+
+        //---------------------------
+        // - END MONTHLY SALES CHART -
+        //---------------------------
+
+
+        //-------------
+        // - PIE CHART -
+        //-------------
+
+        const pie_chart_options = {
+            series: [400, 200, 80, 50, 100, 85, 200],
+            chart: {
+                type: "donut",
+            },
+            labels: ["Wohnen", "Ernährung", "Gesundheit", "Studium", "Hobbies", "Reisen", "Keine Kategorie"],
+            dataLabels: {
+                enabled: false,
+            },
+            colors: [
+                "#0d6efd",
+                "#20c997",
+                "#ffc107",
+                "#d63384",
+                "#6f42c1",
+                "#adb5bd",
+                "#b33c00"
+                
+            ],
+        };
+
+        const pie_chart = new ApexCharts(
+            document.querySelector("#pie-chart"),
+            pie_chart_options,
+        );
+        pie_chart.render();
+
+        //-----------------
+        // - END PIE CHART -
+        //-----------------
+    </script> <!--end::Script-->
+
+
+</body><!--end::Body-->
+
+</html>
