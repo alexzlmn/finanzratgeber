@@ -8,7 +8,7 @@
         <div class="progress">
           <div class="progress-bar" style="width: 70%"></div>
         </div>
-        <span class="progress-description"> 10% mehr zum letzten Monat </span>
+        <span class="progress-description"> 5% mehr zum letzten Monat </span>
       </div>
     </div>
   </div>
